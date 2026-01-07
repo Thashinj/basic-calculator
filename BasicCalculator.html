@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project 1 - Basic Calculator</title>
+        <link rel="stylesheet" href="calculator-interface.css">
+    </head>
+    <body>
+        
+        <div id="body1">
+            <div id="body2">
+                <input type="text" id="solve" readonly>
+                <table>
+                    <tr>
+                        <td><input type="button" class="button" value="AC" onclick="clearAll()"></td>
+                        <td><input type="button" class="button" value="CE" onclick="clearDisplay()"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" class="button1" value="M+" onclick="memoryPlus()"></td>
+                        <td><input type="button" class="button1" value="M-" onclick="memoryMinus()"></td>
+                        <td><input type="button" class="button1" value="MR" onclick="memoryRecall()"></td>
+                        <td><input type="button" class="button1" value="MC" onclick="memoryClear()"></td>
+                    </tr>
+                   
+                    <tr>
+                        <td><input type="button" class="button2" value="7" onclick="num('7')"></td>
+                        <td><input type="button" class="button2" value="8" onclick="num('8')"></td>
+                        <td><input type="button" class="button2" value="9" onclick="num('9')"></td>
+                        <td><input type="button" class="button2" value="÷" onclick="operatorType('/')"></td>
+                        <td><input type="button" class="button2" value="<-" onclick="backSpace()"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" class="button3" value="4" onclick="num('4')"></td>
+                        <td><input type="button" class="button3" value="5" onclick="num('5')"></td>
+                        <td><input type="button" class="button3" value="6" onclick="num('6')"></td>
+                        <td><input type="button" class="button3" value="×" onclick="operatorType('*')"></td>
+                        <td><input type="button" class="button3" value="√" onclick="squareRoot()"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" class="button4" value="1" onclick="num('1')"></td>
+                        <td><input type="button" class="button4" value="2" onclick="num('2')"></td>
+                        <td><input type="button" class="button4" value="3" onclick="num('3')"></td>
+                        <td><input type="button" class="button4" value="-" onclick="operatorType('-')"></td>
+                        <td><input type="button" class="button4" value="x²" onclick="squaredNumber()"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" class="button5" value="0" onclick="num('0')"></td>
+                        <td><input type="button" class="button5" value="00" onclick="num('00')"></td>
+                        <td><input type="button" class="button5" value="." onclick="num('.')"></td>
+                        <td><input type="button" class="button5" value="+" onclick="operatorType('+')"></td>
+                        <td><input type="button" class="button5" value="=" onclick="calculate()"></td>
+                    </tr>
+
+                </table>
+                
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.8.1/math.min.js"></script>
+        <script src="calculator-working.js"></script>
+    </body>
+</html>
